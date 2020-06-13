@@ -13,7 +13,6 @@ export default function Home() {
     ERROR: "error",
   }
   const submitEmail = () => {
-    console.log("SUBMIT", emailInput)
     setState(states.LOADING)
     const submitUrl = "/api/subscribe"
     axios
@@ -30,7 +29,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-gray-900 flex flex-col items-center justify-center h-screen px-4">
-        <h1 class="text-3xl sm:text-4xl lg:text-6xl text-white font-bold mb-8">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl text-white font-bold mb-8">
           Junior developer tips
         </h1>
         <div
@@ -51,9 +50,8 @@ export default function Home() {
               <input
                 onChange={e => {
                   setEmailInput(e.target.value)
-                  console.log("EMAIL INPUT", emailInput)
                 }}
-                className="focus:outline-none focus:shadow-outline bg-transparent border-l border-t border-b border-white rounded-l px-4 py-2 text-lg text-white placeholder-gray-300 w-48 sm:w-full"
+                className="focus:outline-none focus:shadow-outline bg-transparent border-l border-t border-b border-white rounded-l px-4 py-2 text-lg text-white placeholder-gray-300 w-48 sm:w-64"
                 type="text"
                 placeholder="Your email"
               />
@@ -70,7 +68,7 @@ export default function Home() {
           {state === "success" ? (
             <div>
               Success! Your email has been added, and you'll be receiving the
-              tips soon! I've also sent a welcome email, if you don't see it,
+              tips soon! I've also sent a welcome email. If you don't see it,
               please check your spam folder.
             </div>
           ) : null}
