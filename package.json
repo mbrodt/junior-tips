@@ -14,12 +14,17 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "base-64": "^0.1.0",
     "gatsby": "^2.22.15",
+    "gatsby-plugin-postcss": "^2.3.4",
+    "node-fetch": "^2.6.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "tailwindcss": "^1.4.6"
   },
   "repository": {
     "type": "git",
