@@ -8,11 +8,11 @@ export default function Home() {
   }
   return (
     <>
-      <div className="bg-gray-900 flex flex-col items-center justify-center h-full">
+      <div className="bg-gray-900 flex flex-col items-center justify-center h-screen">
         <div
           className="w-full max-w-4xl mx-auto text-white rounded-lg shadow-2xl pt-10 py-12"
           style={{
-            background: "linear-gradient(90deg, #ff5b5d 0%, #de6baf 100%);",
+            background: "linear-gradient(90deg, #ff5b5d 0%, #de6baf 100%)",
           }}
         >
           <div className="w-full text-center flex flex-col items-center justify-center">
