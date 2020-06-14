@@ -12,29 +12,35 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <meta
-          content="An email series with applicable tips and tricks for navigating a tech career, improving your technical skills, and landing your dream developer job."
           name="description"
-        />
-        <meta content="summary_large_image" name="twitter:card" />
-        <meta content="@madsbrodt" name="twitter:site" />
-        <meta content="Junior developer tips" name="twitter:title" />
-        <meta
           content="An email series with applicable tips and tricks for navigating a tech career, improving your technical skills, and landing your dream developer job."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@madsbrodt" />
+        <meta name="twitter:title" content="Junior developer tips" />
+        <meta
           name="twitter:description"
-        />
-        <meta content="/devtips_metaimage.png" name="twitter:image" />
-        <meta content="@madsbrodt" name="twitter:creator" />
-        <meta
-          content="https://junior-dev-tips.netlify.app/"
-          property="og:url"
-        />
-        <meta content="article" property="og:type" />
-        <meta content="Junior developer tips" property="og:title" />
-        <meta
           content="An email series with applicable tips and tricks for navigating a tech career, improving your technical skills, and landing your dream developer job."
-          property="og:description"
         />
-        <meta content="/devtips_metaimage.png" property="og:image" />
+        <meta
+          name="twitter:image"
+          content="https://junior-dev-tips.netlify.app/devtips_metaimage.png"
+        />
+        <meta name="twitter:creator" content="@madsbrodt" />
+        <meta
+          property="og:url"
+          content="https://junior-dev-tips.netlify.app/"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Junior developer tips" />
+        <meta
+          property="og:description"
+          content="An email series with applicable tips and tricks for navigating a tech career, improving your technical skills, and landing your dream developer job."
+        />
+        <meta
+          property="og:image"
+          content="https://junior-dev-tips.netlify.app/devtips_metaimage.png"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
