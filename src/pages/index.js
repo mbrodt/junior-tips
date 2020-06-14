@@ -33,14 +33,14 @@ export default function Home() {
           Junior developer tips
         </h1>
         <div
-          className="w-full max-w-4xl mx-auto text-white rounded-lg shadow-2xl pt-10 py-12 px-8"
+          className="w-full max-w-4xl mx-auto text-white rounded-lg shadow-2xl pt-10 py-12 px-4 sm:px-8"
           style={{
             background: "linear-gradient(90deg, #ff5b5d 0%, #de6baf 100%)",
           }}
         >
           <div className="w-full text-center flex flex-col items-center justify-center">
             <div class="max-w-2xl">
-              <p>
+              <p class="sm:text-lg">
                 You'll receive 5 emails with applicable tips and tricks for
                 navigating a tech career, improving your technical skills, and
                 landing your dream developer job.
@@ -57,10 +57,13 @@ export default function Home() {
               />
               <button
                 onClick={submitEmail}
-                className="rounded-r bg-white text-gray-900 px-8 text-sm font-bold"
+                className="rounded-r bg-white text-gray-900 px-8 text-sm font-bold hover:shadow-2xl duration-150 transition-shadow ease-in"
               >
                 Sign Up
               </button>
+            </div>
+            <div className="mt-2">
+              <p class="text-sm">Join over 900+ aspiring learners</p>
             </div>
           </div>
         </div>
