@@ -18,6 +18,8 @@ export default function Home() {
     axios
       .post(submitUrl, {
         email: emailInput,
+        // The ID for the "Coding Mastery" tag
+        tagId: "317853",
       })
       .then(res => {
         setState(states.SUCCESS)
@@ -41,9 +43,17 @@ export default function Home() {
           <div className="w-full text-center flex flex-col items-center justify-center">
             <div class="max-w-2xl">
               <p class="sm:text-lg">
-                You'll receive 5 emails with applicable tips and tricks for
-                navigating a tech career, improving your technical skills, and
-                landing your dream developer job.
+                This series is unfortunately over, but the good news is: I'M
+                WRITING A BOOK! It will contain a lot more content useful for
+                junior and aspiring developers. Check it out at{" "}
+                <a
+                  class="underline text-gray-800"
+                  href="https://madsbrodt.com/mastering-coding-mindset/"
+                >
+                  Mastering the Coding Mindset
+                </a>{" "}
+                or sign up below to receive updates and a sample chapter of the
+                book ✌️
               </p>
             </div>
             <div className="flex mt-8">
