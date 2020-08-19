@@ -1,7 +1,5 @@
 import React from "react"
 import axios from "axios"
-import confetti from "canvas-confetti"
-
 import "../tailwind.css"
 
 export default function Home() {
@@ -25,11 +23,6 @@ export default function Home() {
       })
       .then(res => {
         setState(states.SUCCESS)
-        confetti({
-          particleCount: 200,
-          spread: 70,
-          origin: { y: 0.6 },
-        })
       })
       .catch(err => {
         setState(states.ERROR)
