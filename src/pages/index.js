@@ -1,5 +1,7 @@
 import React from "react"
 import axios from "axios"
+import confetti from "canvas-confetti"
+
 import "../tailwind.css"
 
 export default function Home() {
@@ -18,11 +20,16 @@ export default function Home() {
     axios
       .post(submitUrl, {
         email: emailInput,
-        // The ID for the "Coding Mastery" tag
-        tagId: "317853",
+        // The ID for the "Junior Devs 2" tag
+        tagId: "370017",
       })
       .then(res => {
         setState(states.SUCCESS)
+        confetti({
+          particleCount: 200,
+          spread: 70,
+          origin: { y: 0.6 },
+        })
       })
       .catch(err => {
         setState(states.ERROR)
@@ -43,17 +50,9 @@ export default function Home() {
           <div className="w-full text-center flex flex-col items-center justify-center">
             <div class="max-w-2xl">
               <p class="sm:text-lg">
-                This series is unfortunately over, but the good news is: I'M
-                WRITING A BOOK! It will contain a lot more content useful for
-                junior and aspiring developers. Check it out at{" "}
-                <a
-                  class="underline text-gray-800"
-                  href="https://madsbrodt.com/mastering-coding-mindset/"
-                >
-                  Mastering the Coding Mindset
-                </a>{" "}
-                or sign up below to receive updates and a sample chapter of the
-                book ✌️
+                You'll receive 5 emails with applicable tips and tricks for
+                navigating a tech career, improving your technical skills, and
+                landing your dream developer job.
               </p>
             </div>
             <div className="flex mt-8">
@@ -73,16 +72,17 @@ export default function Home() {
               </button>
             </div>
             <div className="mt-2">
-              <p class="text-sm">Join over 900+ aspiring learners</p>
+              <p class="text-sm">Join over 1100+ aspiring learners</p>
             </div>
           </div>
         </div>
         <div class="text-white mt-8">
           {state === "success" ? (
-            <div>
-              Success! Your email has been added, and you'll be receiving the
-              tips soon! I've also sent a welcome email. If you don't see it,
-              please check your spam folder.
+            <div class="text-xl max-w-4xl px-8 mx-auto">
+              Success! Your email has been added, and the first email on dealing
+              with self doubt as a developer is already on its way to your
+              inbox. It might take a couple of minutes, and make sure to check
+              your spam/promotions folder if you don't see it ✌
             </div>
           ) : null}
           {state === "error" ? (

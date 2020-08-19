@@ -16,6 +16,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "base-64": "^0.1.0",
+    "canvas-confetti": "^1.2.0",
     "gatsby": "^2.22.15",
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-postcss": "^2.3.4",
