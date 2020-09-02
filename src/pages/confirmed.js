@@ -1,4 +1,5 @@
 import React from "react"
+import "../tailwind.css"
 
 const confirmed = () => {
   return (
