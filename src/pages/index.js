@@ -112,7 +112,7 @@ export default function Home() {
               </button> */}
             </div>
             <div className="mt-2">
-              <p class="text-sm">Join over 1100+ aspiring learners</p>
+              <p class="text-sm">Join over 1700+ aspiring learners</p>
             </div>
           </div>
         </div>
